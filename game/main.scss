@@ -7,25 +7,45 @@
     font-size: 20px;  
 
     nav{
-        background-color: dimgray;
+        background-color: rgb(220, 143, 0);
         margin: -10px;
         padding-bottom: 10px;
+        height: 30px;
     }
     ul{
         
-        display: flex;
-        margin-left: 200px;
+        text-align: center;
         
     }
     li{
-        
-        list-style: none;
+        display: inline;
         
     }
     a{
-        display: block;
+       display: inline-block;
         color: rgb(245, 241, 241);
-       margin: 10px 25px 0px 10px; 
+       margin-right: 25px;
+       
+    }
+    a::after{
+        position: absolute;
+        background: #333;
+        transform: scale(0, 1);
+        transition: transfrom .3s;
+    }
+    a:hover::after{
+        transfrom: scale(1, 1);
+    };
+}
+
+.top-img{
+    padding: 100px;
+    img{
+        transition-duration: 0.5s;
+    }
+    img:hover{
+        text-decoration: 0.5s;
+        transform: scale(1.1);
     }
 }
 body {
@@ -36,17 +56,16 @@ body {
     //background-image: url(IMG_1262.jpg);
 }
 
-.top-img{
-   
-    padding:100px;
-}
+
 
 //自己PRページ用↓
 .pr-top {
     width: 50%;
     float: left;
-    img{
-        margin-left: 50%;
+    .img-1{
+        margin-top: 12px;
+        text-align: center;
+       
     }
     h2{
         text-align: center;
@@ -66,6 +85,10 @@ body {
 .pr-sentence{
     width: 50%;
     float: right;
+    background-color: rgb(254, 198, 95);
+    margin-top: 10px;
+    height: 200%;
+    
     p{
         text-align: center;
     }
