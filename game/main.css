@@ -8,8 +8,7 @@
 }
 
 .header nav {
-  background-color: #dc8f00;
-  margin: -10px;
+  margin: 20px;
   padding-bottom: 10px;
   height: 30px;
 }
@@ -24,7 +23,7 @@
 
 .header a {
   position: relative;
-  color: #f5f1f1;
+  color: black;
   text-decoration: none;
 }
 
