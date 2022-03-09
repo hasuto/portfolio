@@ -22,19 +22,26 @@
         
     }
     a{
-       display: inline-block;
+       position: relative;
         color: rgb(245, 241, 241);
-       margin-right: 25px;
+        text-decoration: none;
        
-    }
-    a::after{
+       
+    }a::after{
         position: absolute;
-        background: #333;
-        transform: scale(0, 1);
-        transition: transfrom .3s;
-    }
-    a:hover::after{
-        transfrom: scale(1, 1);
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #333; 
+        bottom: -1px;//アンダーラインがaタグの下端から現れる
+        transform: scale(0, 1); //アンダーラインの縮尺比率。ホバー前はx方向に0
+        transform-origin: left top; //変形(アンダーラインの伸長)の原点がaタグ(各メニュー)の左端
+        transition: transfrom 0.1s; //変形の時間
+    }a:hover::after{
+        transform: scale(1, 1); //ホバー後、x軸方向に1(相対値)伸長
+        transform-origin: right;
     };
 }
 
@@ -80,6 +87,7 @@ body {
     p{
         text-align: center;
     }
+
 }
 
 .pr-sentence{
@@ -88,8 +96,14 @@ body {
     background-color: rgb(254, 198, 95);
     margin-top: 10px;
     height: 200%;
-    
-    p{
+    h3 {
         text-align: center;
+    }
+    p{
+        padding: 40px;
+        text-align: center;
+    }p::before {
+        content: "\A";
+        white-space: pre-wrap;
     }
 }
