@@ -65,8 +65,10 @@ body {
 
 
 //自己PRページ用↓
+
 .pr-top {
     width: 50%;
+    
     float: left;
     .img-1{
         margin-top: 12px;
@@ -92,14 +94,17 @@ body {
 .pr-sentence{
     width: 50%;
     float: right;
-    background-color: rgb(254, 198, 95);
     margin-top: 10px;
     height: 200%;
+    .img-1{
+        margin-top: 12px;
+        text-align: center;
+       
+    }
     h3 {
         text-align: center;
     }
     p{
-        padding: 40px;
         text-align: center;
     }p::before {
         content: "\A";
