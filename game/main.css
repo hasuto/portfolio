@@ -71,53 +71,61 @@ body {
   background-repeat: no-repeat;
 }
 
-.pr-top {
+.pr-all {
+  margin-left: 165px;
+  max-width: 70%;
+}
+
+.pr-all .pr-top {
   width: 50%;
   float: left;
 }
 
-.pr-top .img-1 {
+.pr-all .pr-top .img-1 {
   margin-top: 12px;
   text-align: center;
 }
 
-.pr-top h2 {
+.pr-all .pr-top h2 {
   text-align: center;
   margin-top: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 170px;
 }
 
-.pr-top h3 {
+.pr-all .pr-top h3 {
   text-align: center;
   text-decoration: underline;
 }
 
-.pr-top p {
+.pr-all .pr-top p {
   text-align: center;
 }
 
-.pr-sentence {
+.pr-all .pr-sentence {
   width: 50%;
   float: right;
   margin-top: 10px;
   height: 200%;
 }
 
-.pr-sentence .img-1 {
+.pr-all .pr-sentence .img-1 {
   margin-top: 12px;
   text-align: center;
 }
 
-.pr-sentence h3 {
+.pr-all .pr-sentence h3 {
   text-align: center;
 }
 
-.pr-sentence p {
+.pr-all .pr-sentence p {
   text-align: center;
 }
 
-.pr-sentence p::before {
-  content: "\A";
-  white-space: pre-wrap;
+.pr-all .pr-sentence #school h3, .pr-all .pr-sentence img {
+  margin-top: 50px;
+}
+
+.pr-all .pr-sentence #license h3 {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */
