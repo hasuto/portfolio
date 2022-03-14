@@ -137,10 +137,10 @@ body {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
   opacity: 0;
-  -webkit-transition: opacity 1s,-webkit-transform 0.5s;
-  transition: opacity 1s,-webkit-transform 0.5s;
-  transition: opacity 1s,transform 0.5s;
-  transition: opacity 1s,transform 0.5s,-webkit-transform 0.5s;
+  -webkit-transition: opacity 1s,-webkit-transform 0.5s;
+  transition: opacity 1s,-webkit-transform 0.5s;
+  transition: opacity 1s,transform 0.5s;
+  transition: opacity 1s,transform 0.5s,-webkit-transform 0.5s;
 }
 
 .pr-all .pr-top .box:first-of-type {

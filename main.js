@@ -80,7 +80,7 @@ $(function(){
     $("#contents div").hide();
     $($("tab a.selected").attr("href")).show();
     $("#tab li a").click(function () {
-        $("tab li a").removeClass();
+        $("#tab li a").removeClass();
         $(this).addClass("selected");
         $($(this).attr("href")).fadeIn();
         return false;
