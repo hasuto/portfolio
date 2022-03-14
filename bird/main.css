@@ -1,0 +1,51 @@
+body {
+    background-image: url("back2.jpg");
+  }
+
+  #bird {
+    height: 9%;
+    position: absolute;
+    left: 20%;
+  }
+
+  .enemy {
+    background-image: url("kabe.jpg");
+    width:10%;
+    height:100%;
+    position: absolute;
+    top: 55%;
+    /* top: var(--random_50_150)px; */
+    left: -10%;
+  }
+
+  #startBtn {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    margin-left: 20px;
+  }
+
+  p, #score  {
+    font-size: 30px;
+    color: azure;
+   }
+
+  #back {
+    margin-top: 100px;
+    margin-left: 45%;
+    font-size: 300%;
+  }
+
+  #demo_btn {
+    padding: 1000px;
+  }
+
+  #play {
+    font-size: 140%;
+    
+  }
+
+ 
