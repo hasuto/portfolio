@@ -2,54 +2,52 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
         <title>MdN tableware</title>
         <link rel="stylesheet" href="main.css" />
     </head>
     <body>
         <div class="header">
             <nav>
-            <ul>
-                <li>
-                    <a href="main.html">top-page</a>
-                </li>
-                <li>
-                    <a href="pr.html">about</a>
-                </li>
-            </ul>
-        </nav>
-        </div>
-        <div class="opus-header">
-            <div id="header-inner" class="clearfix">
-
-            </div>
-                <ul id="tab">
-                    <li><a class="selected" href="#tab1">ホームページ</a></li>
-                    <li><a href="#tab2">タイピングゲーム</a></li>
-                    <li><a href="#tab3">フロッピーバード</a></li>
+                <ul>
+                    <li>
+                        <a href="main.html">top-page</a>
+                    </li>
+                    <li>
+                        <a href="pr.html">about</a>
+                    </li>
                 </ul>
-        </div> 
-        <div class="opus-main"> 
-            <div id="contents">
-                <div id="tab1">
+            </nav>
+        </div>
+        <div class="tab-panel">
+                <ul class="tab-group">
+                    <li><a class="tab tab-1 is-active" href="#tab1">ホームページ</a></li>
+                    <li><a class="tab tab-2" href="#tab2">タイピングゲーム</a></li>
+                    <li><a class="tab tab-3" href="#tab3">フロッピーバード</a></li>
+                </ul>
+
+            <div class="panel-group">
+                <div class="panel tab1 is-show">
                     <h1>Home Page</h1>
                     <img src="" alt="ホームページの画像" />
                     <p>授業で作成したホームページです</p>
                     <a href="/homepage/index.html">homepage</a>
                 </div>
-                <div id="tab2">
+                <div class="panel tab2">
                     <h1>Taiping game</h1>
                     <img src="" alt="タイピングゲームの画像" />
                     <p>キータに投稿したタイピングゲームです</p>
                     <a href="/typinggame/index.html">typinggame</a>
                 </div>
-                <div id="tab3">
+                <div class="panel tab3">
                     <h1>Furopii bird</h1>
                     <img src="" alt="フロッピーバードの画像">
                     <p>同じクラスの人とチームを組み作成したフロッピーバードというゲームを再現してみたものです</p>
                     <a href="/bird/top.html">flappybird</a>
                 </div>
             </div>
-        </div>  
+            
+        </div>   
         
         <script type="text/javascript" src="main.js"></script>
     </body>

@@ -1,4 +1,4 @@
-.center{
+.center {
     margin-top: 30px;
     text-align: center;
 }
@@ -6,65 +6,59 @@
 .header {
     font-size: 20px;
 
-    nav{
+    nav {
         margin: 20px;
         padding-bottom: 10px;
         height: 30px;
     }
-    ul{
-        
+    ul {
         text-align: center;
-        
     }
-    li{
+    li {
         display: inline;
-        margin:0px 10px 0px 20px;
-        
+        margin: 0px 10px 0px 20px;
     }
-    a{
-       position: relative;
+    a {
+        position: relative;
         color: black;
         text-decoration: none;
-       
-       
-    }a::after{
+    }
+    a::after {
         position: absolute;
         bottom: -4px;
         left: 0;
-        content: '';
+        content: "";
         width: 100%;
         height: 2px;
-        background: #333; 
-        bottom: -1px;//アンダーラインがaタグの下端から現れる
+        background: #333;
+        bottom: -1px; //アンダーラインがaタグの下端から現れる
         transform: scale(0, 1); //アンダーラインの縮尺比率。ホバー前はx方向に0
         transform-origin: left top; //変形(アンダーラインの伸長)の原点がaタグ(各メニュー)の左端
         transition: transfrom 0.1s; //変形の時間
-    }a:hover::after{
+    }
+    a:hover::after {
         transform: scale(1, 1); //ホバー後、x軸方向に1(相対値)伸長
         transform-origin: right;
-    };
+    }
 }
 
-.top-img{
+.top-img {
     margin-top: 100px;
     max-width: 100%;
-    img{
-        
+    img {
         transition-duration: 0.5s;
     }
-    img:hover{
+    img:hover {
         text-decoration: 0.5s;
         transform: scale(1.1);
     }
 }
 body {
-    
     background-repeat: no-repeat;
-    
-    
+
     //background-image: url(IMG_1262.jpg);
 }
-#footer{
+#footer {
     margin-top: 250px;
     width: 100%;
     height: 70px;
@@ -74,166 +68,126 @@ body {
     color: #fff;
 }
 
-
-
 //自己PRページ用↓
-.pr-all{
+.pr-all {
     max-width: 100%;
 
-        .pr-top {
-            width: 50%;
-            
-            float: left;
-            #my{
-                margin: 70px 0px 130px 0px;
-            }
-            .img-1{
-                text-align: center;
-            }
-            img{
-                margin-top: 12px;
-                
-                max-width: 300px;
-                margin-left: 100px;
-            }
-            .fadein-before{
-                opacity: 0;
-                transform: translateX(-100px);
-                transition: opacity 1s,transform 1s;
-            }
-            .fadein-after{
-                opacity: 1;
-                transform: translate(0);
-            }
-            h2{
-                text-align: center;
-                margin-top: 80px;
-                font-weight: 100;
-                
-            
-            }
+    .pr-top {
+        width: 50%;
 
-            h3{
-                text-align: center;
-                text-decoration: underline;
-            }
-            p{
-                text-align: center;
-            }
+        float: left;
+        #my {
+            margin: 70px 0px 130px 0px;
+        }
+        .img-1 {
+            text-align: center;
+        }
+        img {
+            margin-top: 12px;
 
-            .box{
-                transform: translateX(-50px);
-                opacity:0;
-                transition:opacity
-                1s,transform 0.5s;
-            }
-
-            .box:first-of-type{
-                margin:80% 5% 5% 5%;
-            }
-            .fadein{
-                opacity:1;
-                transform:translateX(0);
-            }
-            #job{
-                margin-top: 65px;
-            }
-
-
+            max-width: 300px;
+            margin-left: 100px;
+        }
+        .fadein-before {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: opacity 1s, transform 1s;
+        }
+        .fadein-after {
+            opacity: 1;
+            transform: translate(0);
+        }
+        h2 {
+            text-align: center;
+            margin-top: 80px;
+            font-weight: 100;
         }
 
-        .pr-sentence{
-            width: 50%;
-            float: right;
-            margin-top: 10px;
-            height: 200%;
-            img{
-                margin-top: 12px;
-                max-width: 300px;
-                margin-left: 100px;
-            
-            }
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        p {
+            text-align: center;
+        }
 
-            .fadein-before{
-                opacity: 0;
-                transform: translateX(100px);
-                transition: opacity 1s,transform 1s;
-            }
-            .fadein-after{
-                opacity: 1;
-                transform: translate(0);
-            }
-            h3 {
-                text-align: center;
-            }
-            p{
-                text-align: center;
-            }
-            #school h3,img{
-                margin-top: 50px;
-            }
-            #license h3{
-                margin-top: 110px;
-            }
-            
+        .box {
+            transform: translateX(-50px);
+            opacity: 0;
+            transition: opacity 1s, transform 0.5s;
+        }
 
-         
-}
+        .box:first-of-type {
+            margin: 80% 5% 5% 5%;
+        }
+        .fadein {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        #job {
+            margin-top: 65px;
+        }
+    }
+
+    .pr-sentence {
+        width: 50%;
+        float: right;
+        margin-top: 10px;
+        height: 200%;
+        img {
+            margin-top: 12px;
+            max-width: 300px;
+            margin-left: 100px;
+        }
+
+        .fadein-before {
+            opacity: 0;
+            transform: translateX(100px);
+            transition: opacity 1s, transform 1s;
+        }
+        .fadein-after {
+            opacity: 1;
+            transform: translate(0);
+        }
+        h3 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        #school h3,
+        img {
+            margin-top: 50px;
+        }
+        #license h3 {
+            margin-top: 110px;
+        }
+    }
 }
 
 //紹介ページ
-.opus-header{
-    width: 100%;
-    height: 120px;
-    background: url() repeat-x 0 bottom #D8D8C5;
-    &-inner{
-        width: 700px;
-        height: 80px;
-        margin: 0 auto;
-    }
-    #tab{
-        width: 700px;
-        height: 40px;
-        margin: 0 auto;
-    }
-    #tab li{
-        float: left;
-        margin-left: 3px;
-        list-style-type: none;
-    }
-    #tab li a{
-        display: block;
-        width: 120px;
-        height: 34px;
-        padding-top: 6px;
-        font-size: 1.8em;
-        text-align: center;
-        background-color: #494941;
-        color: #FFF;
-    }
-    #tab li a:hover{
-        background-color: #747468;
-        color: #fff;
-    }
-    #tab li a.selected {
-        background-color: #FFF;
-        color: #292623;
-    }
-   
+.panel-group {
+    height: 100px;
+    border: solid 1px #ccc;
+    border-top: none;
+    background: #eee;
 }
-.opus-main{
-    #contents{
-        width: 620px;
-        margin: 50px auto;
+.tab {
+    flex-grow: 1;
+    padding: 5px;
+    list-style: none;
+    border: solid 1px #ccc;
+    text-align: center;
+    cursor: pointer;
+    &.is-active {
+        background: #f00;
+        color: #fff;
+        transition: all 0.2s ease-out;
     }
-    #contents h1{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2.4em;
-    }
-    #contents p{
-        width: 390px;
-        margin: 0 auto;
-        font-size: 1.2em;
-        line-height: 2;
+}
+.panel {
+    display: none;
+    &.is-show {
+        display: block;
     }
 }
