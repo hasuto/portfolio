@@ -1,5 +1,6 @@
 .center {
     margin-top: 30px;
+    height: 100%;
     text-align: center;
     font-family: "Noto Sans JP", sans-serif;
 }
@@ -7,6 +8,9 @@
 .header {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 
     nav {
         margin: 20px;
@@ -42,11 +46,16 @@
         transform: scale(1, 1); //ホバー後、x軸方向に1(相対値)伸長
         transform-origin: right;
     }
+    p {
+        text-align: center;
+    }
 }
 
 .top-img {
     margin-top: 100px;
-    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     img {
         transition-duration: 0.5s;
     }
@@ -62,7 +71,7 @@ body {
 }
 #footer {
     font-family: "Noto Sans JP", sans-serif;
-    margin-top: 250px;
+    text-align: center;
     width: 100%;
     height: 70px;
     padding: 10px 0;
@@ -77,18 +86,34 @@ body {
         font-family: "Noto Sans JP", sans-serif;
         // height: 100vh;
         // max-width: 100%;
-        width: 60%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+        
+        
+        // margin-left: auto;
+        // margin-right: auto;
+        // display: block;
         .pr-top {
-            text-align: center;
-            width: 50%;
+             margin-left: auto;
+             margin-right: auto;
+            // display: block;
+             width: 60%;
+            // height: 100%;
+            .pr-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
 
-            float: left;
+                &:not(:last-child) {
+                    margin-bottom: 80px;
+                }
+
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                }
+            }
             #my {
                 margin: 70px 0px 130px 0px;
+                width: 48%;
             }
             .img-1 {
                 text-align: center;
@@ -96,20 +121,18 @@ body {
                 overflow: hidden;
                 padding-top: 60%;
                 margin: 0 auto;
-                & img {
-                    margin-top: 12px;
-                    position: absolute;
-                    object-fit: cover;
-                    width: 100%;
-                    height: auto;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    margin-left: 100px;
-                }
             }
-            img{
-                text-align: center;
+             & img {
+                display: block;
+                width: 48%;
+                height: auto;
+                margin-top: 12px;
+                // position: absolute;
+                //object-fit: cover;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                // margin-left: 100px;
             }
             .fadein-before {
                 opacity: 0;
@@ -120,7 +143,6 @@ body {
                 opacity: 1;
                 transform: translate(0);
             }
-            
 
             h3 {
                 text-align: center;
@@ -132,15 +154,15 @@ body {
                 text-align: center;
             }
 
-            .box {
-                transform: translateX(-50px);
-                opacity: 0;
-                transition: opacity 1s, transform 0.5s;
-            }
+            // .box {
+            //     transform: translateX(-50px);
+            //     opacity: 0;
+            //     transition: opacity 1s, transform 0.5s;
+            // }
 
-            .box:first-of-type {
-                margin: 80% 5% 5% 5%;
-            }
+            // .box:first-of-type {
+            //     margin: 80% 5% 5% 5%;
+            // }
             .fadein {
                 opacity: 1;
                 transform: translateX(0);
@@ -150,58 +172,87 @@ body {
             }
         }
 
-        .pr-sentence {
-            width: 50%;
-            float: right;
-            margin-top: 10px;
-            height: 200%;
-            .img-1 {
-                text-align: center;
-                position: relative;
-                overflow: hidden;
-                padding-top: 60%;
-                & img {
-    
-                    margin-top: 12px;
-                    position: absolute;
-                    object-fit: cover;
-                    width: 100%;
-                    height: auto;
-                    top: 30%;
-                    left: 30%;
-                    transform: translate(-50%, -50%);
-                    margin-left: 100px;
-                }
-            }
+        // float: right;
+        // margin-top: 10px;
+        // height: 200%;
 
-            .fadein-before {
-                opacity: 0;
-                transform: translateX(100px);
-                transition: opacity 1s, transform 1s;
-            }
-            .fadein-after {
-                opacity: 1;
-                transform: translate(0);
-            }
-            h3 {
-                text-align: center;
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 10px;
-            }
-            p {
-                text-align: center;
-            }
-            #school h3,
-            img {
-                margin-top: 50px;
-            }
-            #license h3 {
-                margin-top: 110px;
-            }
+        // .pr-item {
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     flex-wrap: wrap;
+
+        //     &:not(:last-child) {
+        //         margin-bottom: 80px;
+        //     }
+
+        //     &:nth-child(even) {
+        //         flex-direction: row-reverse;
+        //     }
+        // }
+        // .img-1 {
+        //     text-align: center;
+        //     position: relative;
+        //     overflow: hidden;
+        //     padding-top: 60%;
+        //     & img {
+        //         margin-top: 12px;
+        //         // position: absolute;
+        //         object-fit: cover;
+        //         width: 100%;
+        //         height: auto;
+        //         top: 30%;
+        //         left: 30%;
+        //         transform: translate(-50%, -50%);
+        //         margin-left: 100px;
+        //         display: block;
+        //     }
+        // }
+
+        // .fadein-before {
+        //     opacity: 0;
+        //     transform: translateX(100px);
+        //     transition: opacity 1s, transform 1s;
+        // }
+        // .fadein-after {
+        //     opacity: 1;
+        //     transform: translate(0);
+        // }
+        // h3 {
+        //     text-align: center;
+        //     font-size: 20px;
+        //     font-weight: 500;
+        //     margin-bottom: 10px;
+        // }
+        // p {
+        //     text-align: center;
+        // }
+        // #school{
+        //     width: 48%;
+        // }
+
+        #my,
+        #hobby,
+        #job,
+        #school,
+        #license {
+            width: 48%;
         }
+
+        .slick-01 {
+            
+            
+            & div{
+                height: 150px;
+            }
+            
+        }
+
+        
     }
+    
 }
+
 
 //紹介ページ
 .tab-group {
@@ -226,6 +277,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 60px;
     & h1 {
         font-weight: 500;
         font-size: 4vmin;
@@ -235,21 +287,40 @@ body {
     }
     .create {
         text-align: center;
-        margin: 0 auto;
-
+        margin: 0px 5px 10px 5px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
         & p {
             margin-top: 15px;
             padding: 10px 10px 10px 10px;
             display: inline-block;
             text-align: left;
         }
-        & a {
-            margin-left: auto;
-            margin-right: auto;
-            text-align: initial;
+        a {
+            position: relative;
+            color: rgb(208, 0, 0);
+            text-decoration: none;
+        }
+        a::after {
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #333;
+            bottom: -1px; //アンダーラインがaタグの下端から現れる
+            transform: scale(0, 1); //アンダーラインの縮尺比率。ホバー前はx方向に0
+            transform-origin: left top; //変形(アンダーラインの伸長)の原点がaタグ(各メニュー)の左端
+            transition: transfrom 0.1s; //変形の時間
+        }
+        a:hover::after {
+            transform: scale(1, 1); //ホバー後、x軸方向に1(相対値)伸長
+            transform-origin: right;
         }
     }
-    img {
+    & img {
         max-width: 80%;
         margin-bottom: 15px;
     }

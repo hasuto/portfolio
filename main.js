@@ -18,7 +18,7 @@ window.addEventListener('scroll', () => {
     //画面に表示された時にフェードインさせる処理
     if (WINDOW_HEIGHT > (FADEIN_ELEM_TOP + 200)) {
         FADEIN_ELEM.classList.add('fadein-after');
-    }else{
+    } else {
         FADEIN_ELEM.classList.remove('fadein-after');
     }
 });
@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
     //画面に表示された時にフェードインさせる処理
     if (WINDOW_HEIGHT2 > (FADEIN_ELEM_TOP2 + 200)) {
         FADEIN_ELEM2.classList.add('fadein-after');
-    }else{
+    } else {
         FADEIN_ELEM2.classList.remove('fadein-after');
     }
 });
@@ -45,7 +45,7 @@ window.addEventListener('scroll', () => {
     //画面に表示された時にフェードインさせる処理
     if (WINDOW_HEIGHT3 > (FADEIN_ELEM_TOP3 + 200)) {
         FADEIN_ELEM3.classList.add('fadein-after');
-    }else{
+    } else {
         FADEIN_ELEM3.classList.remove('fadein-after');
     }
 });
@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
     //画面に表示された時にフェードインさせる処理
     if (WINDOW_HEIGHT4 > (FADEIN_ELEM_TOP4 + 200)) {
         FADEIN_ELEM4.classList.add('fadein-after');
-    }else{
+    } else {
         FADEIN_ELEM4.classList.remove('fadein-after');
     }
 });
@@ -67,32 +67,32 @@ window.addEventListener('scroll', () => {
     //フェードインする要素の上部の位置を取得する
     const FADEIN_ELEM_TOP5 = FADEIN_ELEM5.getBoundingClientRect().top;
     //ブラウザの高さを取得
-    const WINDOW_HEIGHT5= window.innerHeight;
+    const WINDOW_HEIGHT5 = window.innerHeight;
     //画面に表示された時にフェードインさせる処理
     if (WINDOW_HEIGHT5 > (FADEIN_ELEM_TOP5 + 200)) {
         FADEIN_ELEM5.classList.add('fadein-after');
-    }else{
+    } else {
         FADEIN_ELEM5.classList.remove('fadein-after');
     }
 });
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
     // タブに対してクリックイベントを適用
     const tabs = document.getElementsByClassName('tab');
-    for(let i = 0; i < tabs.length; i++) {
-      tabs[i].addEventListener('click', tabSwitch, false);
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener('click', tabSwitch, false);
     }
-  // タブをクリックすると実行する関数
-  function tabSwitch(){
-    // タブのclassの値を変更
-    document.getElementsByClassName('is-active')[0].classList.remove('is-active');
-    this.classList.add('is-active');
-    // コンテンツのclassの値を変更
-    document.getElementsByClassName('is-show')[0].classList.remove('is-show');
-    const arrayTabs = Array.prototype.slice.call(tabs);
-    const index = arrayTabs.indexOf(this);
-    document.getElementsByClassName('panel')[index].classList.add('is-show');
-  };
+    // タブをクリックすると実行する関数
+    function tabSwitch() {
+        // タブのclassの値を変更
+        document.getElementsByClassName('is-active')[0].classList.remove('is-active');
+        this.classList.add('is-active');
+        // コンテンツのclassの値を変更
+        document.getElementsByClassName('is-show')[0].classList.remove('is-show');
+        const arrayTabs = Array.prototype.slice.call(tabs);
+        const index = arrayTabs.indexOf(this);
+        document.getElementsByClassName('panel')[index].classList.add('is-show');
+    };
 }, false);;
 // $(function(){
 //     $("#contents div").hide();
@@ -106,3 +106,11 @@ document.addEventListener('DOMContentLoaded', function(){
 //     });
 // });
 
+$(function () {
+    $('.slick01').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        arrows: true,
+    });
+});

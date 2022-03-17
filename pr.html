@@ -1,17 +1,21 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    </head>
-    <body class="pr-all">
-        <div class="header">
-            <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick.css" />
+
+</head>
+
+<body class="pr-all">
+    <div class="header">
+        <nav>
             <ul>
                 <li>
                     <a href="main.html">top-page</a>
@@ -21,20 +25,24 @@
                 </li>
             </ul>
         </nav>
-        </div>
-        <div class="pr-top">
+    </div>
+    <div class="pr-top">
+        <div class="pr-item">
+            <img id="fadein3" class="fadein-before" src="zibun.jpeg" alt="">
             <div id="my">
-            <h3>
-                佐々木　蓮斗
-            </h3>
-            <p>
-                経験のある言語<br>
-                C言語　java　html　css　javascript
-            </p>
-        </div>
-            <div class="img-1">
-                <img id="fadein5" class="fadein-before" src="school.jpeg" alt="">
+                <h3>
+                    佐々木　蓮斗
+                </h3>
+                <p>
+                    経験のある言語<br>
+                    C言語　java　html　css　javascript
+                </p>
             </div>
+        </div>
+        <div class="pr-item">
+
+            <img id="fadein5" class="fadein-before" src="school.jpeg" alt="">
+
             <div class="hobby">
                 <h3>
                     趣味
@@ -44,13 +52,14 @@
                 <p>筋トレ</p>
                 <p>スポーツ全般</p>
                 <p>スノーボード</p>
-                <p></p>
+                <p>カフェ巡り</p>
             </div>
+        </div>
 
-            
-            <div class="img-1">
-                <img id="fadein" class="fadein-before" src="sikaku.jpeg" alt="">
-                </div>
+        <div class="pr-item">
+
+            <img id="fadein" class="fadein-before" src="sikaku.jpeg" alt="">
+
             <div id=job>
                 <h3>
                     職歴(アルバイト)
@@ -64,41 +73,57 @@
                 <p></p>
                 <p></p>
             </div>
-
-
         </div>
-        <div class="pr-sentence">
-            <div class="img-1">
-                <img id="fadein3" class="fadein-before" src="zibun.jpeg" alt="">
-                </div>
-                <div id="school">
-                    <h3>
-                        学歴
-                    </h3>
-                    <p>岩手県立盛岡商業高等学校　情報ビジネス科</p>
-                    <p>岩手県立産業技術短期大学校　情報技術科</p>
-                </div>
-                <div class="img-1">
-                    <img id="fadein2" class="fadein-before" src="soccre2.jpeg" alt="">
-                    </div>
-                <div id="license">
-                    <h3>
-                        資格
-                    </h3>
-                    <p>ITパスポート</p>
-                    <p>弓道段位二段</p>
-                    <p>普通自動車免許</p>
-                    <p>全商簿記検定３級</p>
-                    <p>全商情報処理検定プログラミング部門2級</p>
-                    <p></p>
-                </div>
 
-                    <div class="img-1">
-                        <img id="fadein4" class="fadein-before" src="cafe.jpeg" alt="">
-                        </div>
 
+
+        <!-- <div class="pr-sentence"> -->
+        <div class="pr-item">
+
+            <img id="fadein4" class="fadein-before" src="cafe.jpeg" alt="">
+
+            <div id="school">
+                <h3>
+                    学歴
+                </h3>
+                <p>岩手県立盛岡商業高等学校　情報ビジネス科</p>
+                <p>岩手県立産業技術短期大学校　情報技術科</p>
+            </div>
         </div>
-        <script type="text/javascript" src="main.js"></script>
-    </body>
+        <div class="pr-item">
+            <!-- <div class="img-1"> -->
+            <img id="fadein2" class="fadein-before" src="soccre2.jpeg" alt="">
+            <!-- </div> -->
+            <div id="license">
+                <h3>
+                    資格
+                </h3>
+                <p>ITパスポート</p>
+                <p>弓道段位二段</p>
+                <p>普通自動車免許</p>
+                <p>全商簿記検定３級</p>
+                <p>全商情報処理検定プログラミング部門2級</p>
+                <p></p>
+            </div>
+        </div>
+
+
+        <ul class="slick01">
+            <li id="slick-item"><img alt="画像1" src="school.jpeg" /></li>
+            <li id="slick-item"><img alt="画像2" src="soccer.jpeg" /></li>
+            <li id="slick-item"><img alt="画像3" src="soccre2.jpeg" /></li>
+        </ul>
+    </div>
+
+
+
+    <!-- </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
 </html>
-
