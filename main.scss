@@ -1,6 +1,6 @@
 .center {
     margin-top: 30px;
-    height: 100%;
+    height: 80%;
     text-align: center;
     font-family: "Noto Sans JP", sans-serif;
 }
@@ -50,18 +50,23 @@
         text-align: center;
     }
 }
-
-.top-img {
-    margin-top: 100px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    img {
-        transition-duration: 0.5s;
-    }
-    img:hover {
-        text-decoration: 0.5s;
-        transform: scale(1.1);
+@media all and (min-width: 300px) {
+    .top-img {
+        margin-top: 100px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        img {
+            max-width: 350px;
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            transition-duration: 0.5s;
+        }
+        img:hover {
+            text-decoration: 0.5s;
+            transform: scale(1.1);
+        }
     }
 }
 body {
@@ -79,23 +84,25 @@ body {
     opacity: 0.8;
     color: #fff;
 }
+#footer1{
+    margin-bottom: 10px;
+}
 
 //自己PRページ用↓
-@media all and (min-width: 500px) {
+@media all and (min-width: 300px) {
     .pr-all {
         font-family: "Noto Sans JP", sans-serif;
         // height: 100vh;
         // max-width: 100%;
-        
-        
+
         // margin-left: auto;
         // margin-right: auto;
         // display: block;
         .pr-top {
-             margin-left: auto;
-             margin-right: auto;
+            margin-left: auto;
+            margin-right: auto;
             // display: block;
-             width: 60%;
+            width: 60%;
             // height: 100%;
             .pr-item {
                 display: flex;
@@ -112,7 +119,7 @@ body {
                 }
             }
             #my {
-                margin: 70px 0px 130px 0px;
+                
                 width: 48%;
             }
             .img-1 {
@@ -122,9 +129,10 @@ body {
                 padding-top: 60%;
                 margin: 0 auto;
             }
-             & img {
+            & img {
                 display: block;
                 width: 48%;
+                // max-width: 100%;
                 height: auto;
                 margin-top: 12px;
                 // position: absolute;
@@ -152,6 +160,7 @@ body {
             }
             p {
                 text-align: center;
+                margin-bottom: 10px;
             }
 
             // .box {
@@ -167,9 +176,7 @@ body {
                 opacity: 1;
                 transform: translateX(0);
             }
-            #job {
-                margin-top: 65px;
-            }
+           
         }
 
         // float: right;
@@ -235,24 +242,18 @@ body {
         #hobby,
         #job,
         #school,
-        #license {
+        #license,
+        #kinniku {
             width: 48%;
         }
 
         .slick-01 {
-            
-            
-            & div{
+            & div {
                 height: 150px;
             }
-            
         }
-
-        
     }
-    
 }
-
 
 //紹介ページ
 .tab-group {

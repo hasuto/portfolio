@@ -9,6 +9,7 @@ const FADEIN_ELEM2 = document.getElementById('fadein2');
 const FADEIN_ELEM3 = document.getElementById('fadein3');
 const FADEIN_ELEM4 = document.getElementById('fadein4');
 const FADEIN_ELEM5 = document.getElementById('fadein5');
+const FADEIN_ELEM6 = document.getElementById('fadein6');
 //スクロール時に要素をフェードインさせるイベントを設定する
 window.addEventListener('scroll', () => {
     //フェードインする要素の上部の位置を取得する
@@ -73,6 +74,19 @@ window.addEventListener('scroll', () => {
         FADEIN_ELEM5.classList.add('fadein-after');
     } else {
         FADEIN_ELEM5.classList.remove('fadein-after');
+    }
+});
+
+window.addEventListener('scroll', () => {
+    //フェードインする要素の上部の位置を取得する
+    const FADEIN_ELEM_TOP6 = FADEIN_ELEM6.getBoundingClientRect().top;
+    //ブラウザの高さを取得
+    const WINDOW_HEIGHT6 = window.innerHeight;
+    //画面に表示された時にフェードインさせる処理
+    if (WINDOW_HEIGHT6 > (FADEIN_ELEM_TOP6 + 200)) {
+        FADEIN_ELEM6.classList.add('fadein-after');
+    } else {
+        FADEIN_ELEM6.classList.remove('fadein-after');
     }
 });
 
