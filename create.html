@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>MdN tableware</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="main.html">top-page</a>
+                </li>
+                <li>
+                    <a href="pr.html">about</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="create-main">
+        <div class="tab-panel">
+            <ul class="tab-group">
+                <li><a class="tab tab-1 is-active" href="#tab1">Home Page</a></li>
+                <li><a class="tab tab-2" href="#tab2">Typing Game</a></li>
+                <li><a class="tab tab-3" href="#tab3">Flappy Bird</a></li>
+            </ul>
+
+            <div class="panel-group">
+                <div class="panel tab1 is-show">
+                    <h1>ホームページ</h1>
+                    <div class="create">
+                        <img src="homepage.png" alt="ホームページの画像" />
+                        <a href="/homepage/index.html">homepage</a>
+                        <p>授業で作成したホームページです<br>
+                            一年生の前期初めに作ったものなので、HTMLとCSSのみで作成しています。<br>
+                            初めてだったので、わからないことが多くサンプルを真似したところが多いです。<br>
+                            Top-pageに戻るボタン以外は作成した時にままにしています。
+
+                        </p>
+                    </div>
+                </div>
+                <div class="panel tab2">
+                    <h1>タイピングゲーム</h1>
+                    <div class="create">
+                        <img src="typing.png" alt="タイピングゲームの画像" />
+                        <a id="rink" href="/typinggame/index.html">typinggame</a>
+                        <p>学校の課題でQiitaを使ってみようという課題があり、その時に作成したタイピングゲームです。<br>
+                           javascriptを習い、興味を持ちjsを使って何か作りたいと考え作成しました。<br>
+                           jsをメインに作ったので、cssはほとんどいじっていません。
+                        </p>
+                        <a href="https://qiita.com/y21511">qiita投稿記事</a>
+                    </div>
+                </div>
+                <div class="panel tab3">
+                    <h1>フラッピーバード</h1>
+                    <div class="create">
+                        <img src="flappy-top.png" alt="フラッピーバードトップメニュー">
+                        <img src="flappy-game.png" alt="フラッピーバードプレイ画面">
+                        <a href="/bird/top.html">flappybird</a>
+                        <p>授業の一環で同じクラスの人とチームを組みフロッピーバードというゲームを再現してみたものです。<br>
+                           私はjsを担当し、ゲームの動きやトップメニューからの画面推移を実装しました。画像やcssは他の仲間が担当しました。<br>
+                           jsはネットでゲームの動きを解説している記事を参考に作成しました。<br>
+                           自分達の思うような仕様にするため動きはところどころ変更しましたが、ゲーム自体のキャラクターの画像が切り取りで作ったものだったので、js内で壁との当たり判定をするときに
+                           切り取った部分が当たってしまい、キャラクターが当たっていないのにGameOverしてしまうことがあるので、そこは改善が必要なところでした。<br>
+                           
+
+
+                        </p>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

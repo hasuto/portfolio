@@ -30,6 +30,7 @@ createText();
 const timer = document.getElementById('timer');
 let TIME = 60;
 const seikai = document.getElementById('seikai');
+const explanation = document.getElementById('explanation');
 
 
 const countdown = setInterval(function() {
@@ -44,6 +45,7 @@ const countdown = setInterval(function() {
             clearInterval(countdown);
     
             seikai.textContent = '正解数は' + score + '個でした！';
+            explanation.textContent = 'リスタートしたい時はブラウザを更新してね！';
             state = false;
 
 }
