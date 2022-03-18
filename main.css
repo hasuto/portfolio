@@ -126,6 +126,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    margin-bottom: 80px;
   }
   .pr-all .pr-top .pr-item {
     display: -webkit-box;
@@ -149,21 +150,12 @@ body {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .pr-all .pr-top #my {
-    width: 48%;
-  }
-  .pr-all .pr-top .img-1 {
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    padding-top: 60%;
-    margin: 0 auto;
-  }
   .pr-all .pr-top img {
     display: block;
     width: 48%;
     height: auto;
     margin-top: 12px;
+    border-radius: 10px;
   }
   .pr-all .pr-top .fadein-before {
     opacity: 0;
@@ -201,9 +193,6 @@ body {
   .pr-all #license,
   .pr-all #kinniku {
     width: 48%;
-  }
-  .pr-all .slick-01 div {
-    height: 150px;
   }
 }
 

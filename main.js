@@ -108,23 +108,5 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementsByClassName('panel')[index].classList.add('is-show');
     };
 }, false);;
-// $(function(){
-//     $("#contents div").hide();
-//     $($("tab a.selected").attr("href")).show();
-//     $("#tab li a").click(function(){
-//         $("#tab li a").removeClass();
-//         $(this).addClass("selected");
-//         $("#contents div").hide();
-//         $($(this).attr("href")).fadeIn();
-//         return false;
-//     });
-// });
 
-$(function () {
-    $('.slick01').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        dots: true,
-        arrows: true,
-    });
-});
+
