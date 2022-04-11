@@ -24,28 +24,34 @@
         display: inline;
         margin: 0px 10px 0px 20px;
     }
-    a {
-        position: relative;
+    #tabu {
+        // position: relative;
+        display: inline-block;
         color: black;
-        text-decoration: none;
+        text-underline-offset: 0.4em;
+        transition: 0.3s;
     }
-    a::after {
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        content: "";
-        width: 100%;
-        height: 2px;
-        background: #333;
-        bottom: -1px; //アンダーラインがaタグの下端から現れる
-        transform: scale(0, 1); //アンダーラインの縮尺比率。ホバー前はx方向に0
-        transform-origin: left top; //変形(アンダーラインの伸長)の原点がaタグ(各メニュー)の左端
-        transition: transfrom 0.1s; //変形の時間
+    #tabu:hover{
+        cursor: pointer;
+        transform: scale(1.2);
     }
-    a:hover::after {
-        transform: scale(1, 1); //ホバー後、x軸方向に1(相対値)伸長
-        transform-origin: right;
-    }
+    // a::after {
+    //     position: absolute;
+    //     bottom: -4px;
+    //     left: 0;
+    //     content: "";
+    //     width: 100%;
+    //     height: 2px;
+    //     background: #333;
+    //     bottom: -1px; //アンダーラインがaタグの下端から現れる
+    //     transform: scale(1, 1); //アンダーラインの縮尺比率。ホバー前はx方向に0
+    //     transform-origin: left top; //変形(アンダーラインの伸長)の原点がaタグ(各メニュー)の左端
+    //     transition: transfrom 0.1s; //変形の時間
+    // }
+    // a:hover::after {
+    //     transform: scale(0, 1); //ホバー後、x軸方向に1(相対値)伸長
+    //     transform-origin: right;
+    // }
     p {
         text-align: center;
     }
