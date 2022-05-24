@@ -226,6 +226,10 @@ body {
             position: relative;
             color: rgb(208, 0, 0);
             text-decoration: none;
+            border: 2px solid;
+            padding: 5px;
+            border-radius: 15px;
+            background-color: rgb(255, 255, 255);
         }
         a::after {
             position: absolute;

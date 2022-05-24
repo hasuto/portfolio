@@ -240,6 +240,10 @@ body {
   position: relative;
   color: #d00000;
   text-decoration: none;
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: white;
 }
 
 .panel-group .create a::after {
