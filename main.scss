@@ -24,14 +24,14 @@
         display: inline;
         margin: 0px 10px 0px 20px;
     }
-    #tabu {
+    .tabu {
         // position: relative;
         display: inline-block;
         color: black;
         text-underline-offset: 0.4em;
         transition: 0.3s;
     }
-    #tabu:hover{
+    .tabu:hover{
         cursor: pointer;
         transform: scale(1.2);
     }

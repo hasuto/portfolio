@@ -35,7 +35,7 @@
   margin: 0px 10px 0px 20px;
 }
 
-.header #tabu {
+.header .tabu {
   display: inline-block;
   color: black;
   text-underline-offset: 0.4em;
@@ -43,7 +43,7 @@
   transition: 0.3s;
 }
 
-.header #tabu:hover {
+.header .tabu:hover {
   cursor: pointer;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
