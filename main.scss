@@ -80,7 +80,7 @@ body {
 
     //background-image: url(IMG_1262.jpg);
 }
-#footer {
+.footer {
     font-family: "Noto Sans JP", sans-serif;
     text-align: center;
     width: 100%;
@@ -90,12 +90,12 @@ body {
     opacity: 0.8;
     color: #fff;
 }
-#footer1 {
+.footerInner {
     margin-bottom: 10px;
 }
 
 //自己PRページ用↓
-@media all and (min-width: 300px) {
+// @media all and (max-width: 767px) {
     .pr-all {
         font-family: "Noto Sans JP", sans-serif;
         // height: 100vh;
@@ -110,9 +110,94 @@ body {
             // display: block;
             width: 60%;
             margin-bottom: 80px;
+            display: block;
             // height: 100%;
             .pr-item {
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                &:not(:last-child) {
+                    margin-bottom: 80px;
+                }
+
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                }
+            }
+
+            img {
+                display: block;
+                width: 48%;
+                // max-width: 100%;
+                height: auto;
+                margin-top: 12px;
+                border-radius: 10px;
+                // position: absolute;
+                //object-fit: cover;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                // margin-left: 100px;
+            }
+            .fadein-before {
+                opacity: 0;
+                transform: translateX(-100px);
+                transition: opacity 1s, transform 1s;
+            }
+            .fadein-after {
+                opacity: 1;
+                transform: translate(0);
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            p {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .fadein {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        #my,
+        #hobby,
+        #job,
+        #school,
+        #license,
+        #kinniku {
+            width: 48%;
+        }
+
+    }
+// }
+@media screen and (max-width:767px){
+    .pr-all {
+        font-family: "Noto Sans JP", sans-serif;
+        // height: 100vh;
+        // max-width: 100%;
+
+        // margin-left: auto;
+        // margin-right: auto;
+        // display: block;
+        .pr-top {
+            margin-left: auto;
+            margin-right: auto;
+            // display: block;
+            width: 60%;
+            margin-bottom: 80px;
+            display: block;
+            // height: 100%;
+            .pr-item {
+                display: block;
                 justify-content: space-between;
                 align-items: center;
                 flex-wrap: wrap;
@@ -197,7 +282,7 @@ body {
     border-top: none;
     background: #eee;
     padding-top: 10px;
-    width: 60%;
+    width: 90%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -264,6 +349,7 @@ body {
     text-align: center;
     cursor: pointer;
     background: #eee;
+    color: #000000;
 
     &.is-active {
         background: #eb6100;

@@ -87,7 +87,7 @@ body {
   background-repeat: no-repeat;
 }
 
-#footer {
+.footer {
   font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   width: 100%;
@@ -98,11 +98,99 @@ body {
   color: #fff;
 }
 
-#footer1 {
+.footerInner {
   margin-bottom: 10px;
 }
 
-@media all and (min-width: 300px) {
+.pr-all {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.pr-all .pr-top {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-bottom: 80px;
+  display: block;
+}
+
+.pr-all .pr-top .pr-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pr-all .pr-top .pr-item:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.pr-all .pr-top .pr-item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.pr-all .pr-top img {
+  display: block;
+  width: 48%;
+  height: auto;
+  margin-top: 12px;
+  border-radius: 10px;
+}
+
+.pr-all .pr-top .fadein-before {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  transition: opacity 1s, transform 1s, -webkit-transform 1s;
+}
+
+.pr-all .pr-top .fadein-after {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.pr-all .pr-top h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.pr-all .pr-top p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pr-all .pr-top .fadein {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.pr-all #my,
+.pr-all #hobby,
+.pr-all #job,
+.pr-all #school,
+.pr-all #license,
+.pr-all #kinniku {
+  width: 48%;
+}
+
+@media screen and (max-width: 767px) {
   .pr-all {
     font-family: "Noto Sans JP", sans-serif;
   }
@@ -111,11 +199,10 @@ body {
     margin-right: auto;
     width: 60%;
     margin-bottom: 80px;
+    display: block;
   }
   .pr-all .pr-top .pr-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -198,7 +285,7 @@ body {
   border-top: none;
   background: #eee;
   padding-top: 10px;
-  width: 60%;
+  width: 90%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -287,6 +374,7 @@ body {
   text-align: center;
   cursor: pointer;
   background: #eee;
+  color: #000000;
 }
 
 .tab.is-active {
