@@ -7,6 +7,7 @@
 
 .header {
   font-family: "Noto Sans JP", sans-serif;
+  margin-top: 11px;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,7 +70,7 @@
   }
   .top-img img {
     max-width: 350px;
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     -webkit-transition-duration: 0.5s;
@@ -83,6 +84,13 @@
   }
 }
 
+.main-page {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   background-repeat: no-repeat;
 }
@@ -91,15 +99,13 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   width: 100%;
-  height: 70px;
-  padding: 10px 0;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   background-color: black;
   opacity: 0.8;
   color: #fff;
-}
-
-.footerInner {
-  margin-bottom: 10px;
+  line-height: 1.8;
 }
 
 .pr-all {
@@ -163,14 +169,16 @@ body {
           transform: translate(0);
 }
 
-.pr-all .pr-top h3 {
+.pr-all .pr-top h3,
+.pr-all .pr-top dt {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.pr-all .pr-top p {
+.pr-all .pr-top p,
+.pr-all .pr-top dd {
   text-align: center;
   margin-bottom: 10px;
 }
@@ -181,18 +189,20 @@ body {
           transform: translateX(0);
 }
 
-.pr-all #my,
-.pr-all #hobby,
-.pr-all #job,
-.pr-all #school,
-.pr-all #license,
-.pr-all #kinniku {
+.pr-all .my,
+.pr-all .hobby,
+.pr-all .job,
+.pr-all .school,
+.pr-all .license,
+.pr-all .kinniku {
+  line-height: 1.6;
   width: 48%;
 }
 
 @media screen and (max-width: 767px) {
   .pr-all {
     font-family: "Noto Sans JP", sans-serif;
+    text-align: center;
   }
   .pr-all .pr-top {
     margin-left: auto;
@@ -206,11 +216,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .pr-all .pr-top .pr-item:not(:last-child) {
     margin-bottom: 80px;
@@ -222,11 +227,11 @@ body {
             flex-direction: row-reverse;
   }
   .pr-all .pr-top img {
-    display: block;
-    width: 100%;
     height: auto;
     margin-top: 12px;
+    margin-bottom: 40px;
     border-radius: 10px;
+    width: 100%;
   }
   .pr-all .pr-top .fadein-before {
     opacity: 0;
@@ -249,7 +254,8 @@ body {
     margin-bottom: 10px;
   }
   .pr-all .pr-top p {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
   }
   .pr-all .pr-top .fadein {
@@ -257,12 +263,14 @@ body {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  .pr-all #my,
-  .pr-all #hobby,
-  .pr-all #job,
-  .pr-all #school,
-  .pr-all #license,
-  .pr-all #kinniku {
+  .pr-all .my,
+  .pr-all .hobby,
+  .pr-all .job,
+  .pr-all .school,
+  .pr-all .license,
+  .pr-all .kinniku {
+    display: inline;
+    line-height: 1.7;
     width: 48%;
   }
 }
@@ -270,6 +278,7 @@ body {
 .tab-group {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -317,6 +326,7 @@ body {
 }
 
 .panel-group .create p {
+  line-height: 1.6;
   margin-top: 15px;
   padding: 10px 10px 10px 10px;
   display: inline-block;
