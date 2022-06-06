@@ -75,6 +75,10 @@
             text-decoration: 0.5s;
             transform: scale(1.1);
         }
+        a{
+            background-color:#fff ;
+            border-style: none;
+        }
         
     }
 }
@@ -318,11 +322,13 @@ body {
         flex-flow: column;
         align-items: center;
         & p {
-            line-height: 1.6;
+            line-height: 1.8;
             margin-top: 15px;
             padding: 10px 10px 10px 10px;
             display: inline-block;
             text-align: left;
+            font-size: 3vmin;
+            max-width: 950px;
         }
         a {
             position: relative;
@@ -352,7 +358,7 @@ body {
         }
     }
     & img {
-        max-width: 80%;
+        max-width: 75%;
         margin-bottom: 15px;
     }
 }

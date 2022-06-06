@@ -82,6 +82,10 @@
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+  .top-img a {
+    background-color: #fff;
+    border-style: none;
+  }
 }
 
 .main-page {
@@ -326,11 +330,13 @@ body {
 }
 
 .panel-group .create p {
-  line-height: 1.6;
+  line-height: 1.8;
   margin-top: 15px;
   padding: 10px 10px 10px 10px;
   display: inline-block;
   text-align: left;
+  font-size: 3vmin;
+  max-width: 950px;
 }
 
 .panel-group .create a {
@@ -368,7 +374,7 @@ body {
 }
 
 .panel-group img {
-  max-width: 80%;
+  max-width: 75%;
   margin-bottom: 15px;
 }
 
